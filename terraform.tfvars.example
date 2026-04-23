@@ -1,0 +1,12 @@
+ibmcloud_api_key        = "your-ibm-cloud-api-key"
+ibmcloud_cluster_region = "ca-tor"
+ibmcloud_resource_group = ""
+
+cluster_name_or_id = "my-openshift-cluster"
+
+utils_namespace = "f5-utils"
+license_mode    = "connected"
+
+# Value from flo project output (sensitive):
+#   terraform -chdir=../ibmcloud_schematics_bigip_next_for_kubernetes_2_3_flo output -raw cos_jwt_token
+jwt_token = ""
