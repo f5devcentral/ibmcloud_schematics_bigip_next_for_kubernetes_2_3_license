@@ -34,3 +34,46 @@ variable "cneinstance_dependency" {
   type        = any
   default     = null
 }
+
+variable "use_cos_bucket" {
+  description = "Fetch JWT token from an IBM COS bucket instead of passing it directly"
+  type        = bool
+  default     = false
+}
+
+variable "ibmcloud_api_key" {
+  description = "IBM Cloud API key used to authenticate COS requests"
+  type        = string
+  sensitive   = true
+  default     = ""
+}
+
+variable "ibmcloud_cos_bucket_region" {
+  description = "Region where the COS bucket is located"
+  type        = string
+  default     = ""
+}
+
+variable "ibmcloud_resource_group" {
+  description = "IBM Cloud resource group containing the COS instance (empty = default group)"
+  type        = string
+  default     = ""
+}
+
+variable "ibmcloud_cos_instance_name" {
+  description = "Name of the IBM Cloud Object Storage service instance"
+  type        = string
+  default     = ""
+}
+
+variable "ibmcloud_resources_cos_bucket" {
+  description = "Name of the COS bucket that holds the JWT file"
+  type        = string
+  default     = ""
+}
+
+variable "f5_cne_subscription_jwt_file" {
+  description = "Object key (filename) of the JWT file within the COS bucket"
+  type        = string
+  default     = ""
+}
