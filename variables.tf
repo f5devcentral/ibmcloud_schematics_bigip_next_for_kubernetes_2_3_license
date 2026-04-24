@@ -73,7 +73,7 @@ variable "flo_utils_namespace" {
 # License Configuration
 # ============================================================
 
-variable "license_f5_cne_subscription_jwt_file" {
+variable "f5_cne_subscription_jwt_file" {
   description = "Subscription JWT filename in the COS bucket"
   type        = string
   default     = "trial.jwt"

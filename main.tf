@@ -47,7 +47,7 @@ module "license" {
   ibmcloud_resources_cos_bucket = var.ibmcloud_resources_cos_bucket
 
   utils_namespace = var.flo_utils_namespace
-  f5_cne_subscription_jwt_file  = var.license_f5_cne_subscription_jwt_file
+  f5_cne_subscription_jwt_file  = var.f5_cne_subscription_jwt_file
   license_mode    = var.license_mode
 
 }
