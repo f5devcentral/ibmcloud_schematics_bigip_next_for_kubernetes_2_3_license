@@ -25,5 +25,5 @@ flo_utils_namespace        = "f5-utils"
 # ============================================================
 # License
 # ============================================================
-license_f5_cne_subscription_jwt_file  = "trial.jwt"
+f5_cne_subscription_jwt_file  = "trial.jwt"
 license_mode = "connected"
